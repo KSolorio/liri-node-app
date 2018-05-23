@@ -58,11 +58,11 @@ if (command === "spotify-this-song") {
       if (!error && response.statusCode === 200) {
         console.log("Title: " + JSON.parse(body).Title 
         + "\nRelease Year: " + JSON.parse(body).Year 
-        + "\nRating: " + JSON.parse(body).imdbRating
+        + "\nIMBD Rating: " + JSON.parse(body).imdbRating
         + "\nPlot: " + JSON.parse(body).Plot
         + "\nLanguage: " + JSON.parse(body).Language
         + "\nActors: " + JSON.parse(body).Actors 
-        + "\nRatings: " + JSON.parse(body).Ratings[0].Value
+        + "\nRotten Tomatoes Ratings: " + JSON.parse(body).Ratings[0].Value
         + "\nCountry: " + JSON.parse(body).Country);
       };
     });
