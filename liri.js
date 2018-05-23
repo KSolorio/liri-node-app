@@ -32,7 +32,7 @@ if (command === "my-tweets") {
 } 
 
 //Spotify 
-if (command === "spotify-this-thing") {
+if (command === "spotify-this-song") {
   spotify.search({ type: 'track', query: userInput || 'The Sign', limit: 5 }, function (err, data) {
     
     if (!err) {
